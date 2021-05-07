@@ -1,0 +1,39 @@
+.demo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+}
+.demo-info{
+    padding: 50px 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+.demo-info *{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:white;
+}
+.demo-info h2{
+    font-size: 64px;
+    font-weight: 800;
+}
+.demo-info h4{
+    font-size: 20px;
+}
+.demo-info-line{
+    width: 20%;
+}
+.demo-info-line{
+    border-bottom: dashed 6px #af9a7d;;
+}
+.link-to-apparts{
+    text-decoration: none;
+}

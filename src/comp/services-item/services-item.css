@@ -1,0 +1,22 @@
+.services-item{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.services-item *{
+    margin:10px 0;
+}
+.services-item i{
+    font-size: 46px;
+    color:#af9a7d;
+}
+.services-item p{
+    font-size: 16px;
+}
+.services-item h5{
+    font-size: 20px;
+    font-weight: 900;
+}

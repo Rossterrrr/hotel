@@ -1,0 +1,17 @@
+.gold-btn:hover{
+    background-color: transparent;
+    color:#af9a7d;
+}
+.gold-btn{
+    font-size: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: #af9a7d;
+    color:black;
+    font-weight: 200;
+    border: none;
+    cursor: pointer;
+    border: solid 2px #af9a7d;
+    box-sizing: border-box;
+    z-index: 2;
+}
