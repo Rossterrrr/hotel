@@ -1,0 +1,41 @@
+.select-title{
+    display: inline-block;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.select-container input{
+    margin-right: 5px;
+}
+.select-container input,.select-container select{
+    border:solid 1px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    outline:none;
+    padding: 10px 20px;
+}
+.select-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.select-container div{
+    width: 100%;
+}
+.filter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+.price-range-selector{
+    width: 80%;
+}
+.square-selector{
+    width: 30%;
+    box-sizing:content-box;
+}
+.stars-count,.persons{
+    width: 60%;
+}
+.extended-options input{
+    margin-right: 10px;
+}
