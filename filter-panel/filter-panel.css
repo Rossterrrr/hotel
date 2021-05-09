@@ -18,7 +18,13 @@
     justify-content: center;
     align-items: flex-start;
 }
-.select-container div{
+.range-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.select-container div,.range-container div{
     width: 100%;
 }
 .filter{

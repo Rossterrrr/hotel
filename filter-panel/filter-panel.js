@@ -25,14 +25,16 @@ export default class FilterPanel extends Component{
         )
     }
     getCountPersonParams(){
-        this.props.data.forEach(item => {
-            this.minPersons = this.minPersons > item.persons?item.persons:this.minPersons;
-            this.maxPersons = this.maxPersons < item.persons?item.persons:this.maxPersons;
-        })
-        for(let i = this.minPersons;i <= this.maxPersons;i++){
-            this.personCountArray.push(i); 
+        let result = [];
+
+        for (let value of this.props.data) {
+            if (!result.includes(value.persons)) {
+              result.push(value.persons);
+            }
         }
-        return this.personCountArray.map(item => {
+        result.sort();
+        result.unshift('Не указано');
+        return result.map(item => {
             return (<option>{item}</option>)
         })
     }
@@ -45,6 +47,7 @@ export default class FilterPanel extends Component{
             }
         }
         result.sort();
+        result.unshift('Не указано');
         return result.map(item => {
             return(
                 <option>{item}</option>
@@ -77,10 +80,11 @@ export default class FilterPanel extends Component{
                                 </div>
                             </div>
                             
-                            <div className="select-container">
+                            <div className="range-container">
                                 <span className="select-title">Цена за сутки</span>
+                                <span>{this.props.range.value}Р</span>
                                 <div>
-                                    <input className="price-range-selector" type="range" min="200" max="1600" value="1200"/>
+                                    <input className="price-range-selector" name="range" type="range" min={this.props.range.min} max={this.props.range.max} value={this.props.range.value} onChange={(e) => this.props.onRangeChange(e)}/>
                                 </div>
                             </div>
 
@@ -94,13 +98,13 @@ export default class FilterPanel extends Component{
                             <div className="select-container ">
                                 <div className="extended-options">
                                     <div className="checkbox-item">
-                                        <input type="checkbox"/>Завтрак
+                                        <input type="checkbox" onChange={(e) => this.props.onFilterChange(e,'breakfast')}/>Завтрак
                                     </div>
                                     <div className="checkbox-item">
-                                        <input type="checkbox"/>Ужин
+                                        <input type="checkbox" onChange={(e) => this.props.onFilterChange(e,'afternoon')}/>Ужин
                                     </div>
                                     <div className="checkbox-item">
-                                        <input type="checkbox"/>Питомцы
+                                        <input type="checkbox" onChange={(e) => this.props.onFilterChange(e,'pets')}/>Питомцы
                                     </div>
                                 </div>
                             </div>
