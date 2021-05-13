@@ -1,0 +1,8 @@
+.room-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:5vw;
+}
+.room-images img{
+    width: auto;
+}
