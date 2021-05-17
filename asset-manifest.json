@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/Rossterrrr/hotel/static/css/main.f22abd5f.chunk.css",
-    "main.js": "/Rossterrrr/hotel/static/js/main.10adc619.chunk.js",
-    "main.js.map": "/Rossterrrr/hotel/static/js/main.10adc619.chunk.js.map",
+    "main.js": "/Rossterrrr/hotel/static/js/main.ca867729.chunk.js",
+    "main.js.map": "/Rossterrrr/hotel/static/js/main.ca867729.chunk.js.map",
     "runtime-main.js": "/Rossterrrr/hotel/static/js/runtime-main.3a3040d5.js",
     "runtime-main.js.map": "/Rossterrrr/hotel/static/js/runtime-main.3a3040d5.js.map",
-    "static/js/2.820ab85d.chunk.js": "/Rossterrrr/hotel/static/js/2.820ab85d.chunk.js",
-    "static/js/2.820ab85d.chunk.js.map": "/Rossterrrr/hotel/static/js/2.820ab85d.chunk.js.map",
+    "static/js/2.b7adf801.chunk.js": "/Rossterrrr/hotel/static/js/2.b7adf801.chunk.js",
+    "static/js/2.b7adf801.chunk.js.map": "/Rossterrrr/hotel/static/js/2.b7adf801.chunk.js.map",
     "index.html": "/Rossterrrr/hotel/index.html",
     "static/css/main.f22abd5f.chunk.css.map": "/Rossterrrr/hotel/static/css/main.f22abd5f.chunk.css.map",
-    "static/js/2.820ab85d.chunk.js.LICENSE.txt": "/Rossterrrr/hotel/static/js/2.820ab85d.chunk.js.LICENSE.txt"
+    "static/js/2.b7adf801.chunk.js.LICENSE.txt": "/Rossterrrr/hotel/static/js/2.b7adf801.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3a3040d5.js",
-    "static/js/2.820ab85d.chunk.js",
+    "static/js/2.b7adf801.chunk.js",
     "static/css/main.f22abd5f.chunk.css",
-    "static/js/main.10adc619.chunk.js"
+    "static/js/main.ca867729.chunk.js"
   ]
 }
